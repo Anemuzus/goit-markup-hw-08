@@ -1,6 +1,10 @@
 .section__title {
-  font-size: 36px;
-  line-height: 42px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  font-size: 28px;
+  line-height: 33px;
   color: var(--zaholovokh2);
   margin-bottom: 50px;
   text-align: center;
