@@ -1,0 +1,131 @@
+.list {
+  list-style: none;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__studio {
+  color: #000000;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  transition-property: color;
+}
+.site-nav__link-margin {
+  margin-right: 50px;
+  position: relative;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.site-nav--size-p {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+.site-nav__active-link {
+  color: var(--accent-color);
+}
+
+.active {
+  color: var(--accent-color);
+}
+
+.site-nav__serif {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* ------------------------------------подчеркивание-елемента------------ */
+.site-nav__active-link.site-nav--size-p {
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.site-nav .site-nav__link {
+  color: var(--primary-text-color);
+}
+.site-nav .site-nav__link {
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.site-nav .site-nav__link {
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.site-nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
+}
+.site-nav__link {
+  &:hover .mailtel__icons {
+    fill: var(--accent-color);
+  }
+}
+.site-nav__link {
+  &:focus .mailtel__icons {
+    fill: var(--accent-color);
+  }
+}
+/* -----------------------------------хедер nav правый верх ----------------------*/
+.mailtel {
+  display: flex;
+  margin-left: auto;
+}
+.mailtel .mailtel__link {
+  color: var(--benefits);
+  text-decoration: none;
+  transition-property: color;
+}
+.mailtel .mailtel__link {
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.mailtel .mailtel__link {
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mailtel__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
+  transition-property: color;
+}

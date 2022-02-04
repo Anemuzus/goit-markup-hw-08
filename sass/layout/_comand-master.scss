@@ -1,0 +1,96 @@
+.comand-list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+.section-comand {
+  background-color: var(--bcg-comand-and-button-filter);
+  padding-top: 94px;
+}
+
+.comand-list__name-master {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.comand-list__job-master {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--benefits);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.comand-list__discription {
+  background-color: #fff;
+  text-align: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+.comand-list__block {
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.comand-list__block {
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
+}
+.shadow-img {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.social-network-list {
+  display: flex;
+  justify-content: center;
+}
+.social-network-list__item + .social-network-list__item {
+  margin-left: 10px;
+}
+.social-network-list__link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--bgc-text-hero);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
+  transition-property: background-color;
+}
+.social-network-list__link {
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+.social-network-list__link {
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-network-list__link {
+  &:hover .social-network-list__icon {
+    fill: var(--bgc-text-hero);
+  }
+}
+.social-network-list__link {
+  &:focus .social-network-list__icon {
+    fill: var(--bgc-text-hero);
+  }
+}
+
+.social-network-list__icon {
+  fill: var(--icon-color);
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
+  transition-property: fill;
+}
