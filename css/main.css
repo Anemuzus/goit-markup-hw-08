@@ -90,6 +90,12 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .displ-none-img {
+    display: none;
+  }
+}
+
 .list {
   list-style: none;
 }
@@ -1135,17 +1141,36 @@ body {
 }
 
 .modal {
-  position: absolute;
-  width: 528px;
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
   min-height: 581px;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    width: 528px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .form__text-title {
@@ -1220,7 +1245,7 @@ body {
 
 .form__field input {
   padding-left: 42px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;

@@ -43,3 +43,9 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
+.displ-none-img {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
