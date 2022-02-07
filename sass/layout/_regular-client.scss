@@ -63,16 +63,3 @@
     fill: var(--accent-color);
   }
 }
-
-.mailtel__icons {
-  fill: var(--benefits);
-  margin-right: 10px;
-  transition-duration: var(--transition-d);
-  transition-timing-function: var(--transition-t);
-  transition-property: fill;
-}
-.mailtel__icons {
-  &:hover {
-    fill: var(--accent-color);
-  }
-}

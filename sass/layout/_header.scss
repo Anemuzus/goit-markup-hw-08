@@ -3,10 +3,18 @@
 }
 
 .page-header {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    padding: 16px 15px;
+    align-items: center;
+  }
   border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
   display: flex;
   align-items: center;
 }
@@ -26,11 +34,7 @@
 
 .section {
   padding-top: 94px;
-
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
-  }
-  padding-bottom: 60px;
+  padding-bottom: 94px;
 }
 
 .site-nav--size-p {
@@ -108,6 +112,21 @@
   display: flex;
   margin-left: auto;
 }
+.mailtel__icons {
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
+  fill: var(--benefits);
+  margin-right: 10px;
+  transition-duration: var(--transition-d);
+  transition-timing-function: var(--transition-t);
+  transition-property: fill;
+}
+.mailtel__icons {
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
 .mailtel .mailtel__link {
   color: var(--benefits);
   text-decoration: none;
@@ -132,4 +151,10 @@
   transition-duration: var(--transition-d);
   transition-timing-function: var(--transition-t);
   transition-property: color;
+}
+
+.logo-mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
