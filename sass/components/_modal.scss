@@ -244,6 +244,13 @@ input {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.mob-menu {
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
 .btn-close-menu {
   position: absolute;
   top: 10px;

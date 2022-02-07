@@ -131,7 +131,7 @@ body {
           align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .main-nav {
     display: none;
   }
@@ -1741,6 +1741,12 @@ input::placeholder {
   .mob-menu {
     display: none;
   }
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .btn-close-menu {
