@@ -143,6 +143,13 @@
   }
 }
 .filter-list-button__block {
+  &:nth-child(n + 3) {
+    @media screen and (min-width: 250px) and (max-width: 395px) {
+      margin-top: 15px;
+    }
+  }
+}
+.filter-list-button__block {
   &:last-child {
     margin-right: 0;
   }

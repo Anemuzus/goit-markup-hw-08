@@ -239,6 +239,28 @@ body {
   margin-left: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .mailtel {
+    display: none;
+  }
+}
+
+.tablet-header-mail {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .tablet-header-mail {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-header-mail {
+    display: none;
+  }
+}
+
 .mailtel__icons {
   fill: var(--benefits);
   margin-right: 10px;
@@ -1319,6 +1341,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .filter-list-button__block:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 395px) {
+  .filter-list-button__block:nth-child(n + 3) {
     margin-top: 15px;
   }
 }

@@ -109,9 +109,23 @@
 }
 /* -----------------------------------хедер nav правый верх ----------------------*/
 .mailtel {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
   display: flex;
   margin-left: auto;
 }
+// ----------------------MAILTEL_____TABLET---------------------
+.tablet-header-mail {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  display: block;
+}
+
 .mailtel__icons {
   @media screen and (max-width: 768px) {
     margin-right: 0;
