@@ -1709,6 +1709,22 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.container-mobile {
+  background-color: #ffffff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 40px;
+}
+
 .mob-menu {
   background-color: #ffffff;
   position: fixed;
@@ -1756,5 +1772,86 @@ input::placeholder {
 
 .mob-menu-list__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mob-mailtel__link {
+  width: 296px;
+  height: 40px;
+  left: 40px;
+  top: 562px;
+}
+
+.mob-social-network__item {
+  display: inline;
+}
+
+.mob-social-network__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-social-network__link__last {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mob-social-network__link__first {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-social-network__ul {
+  margin-top: 64px;
+}
+
+.meil-mailtel__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-mailtel__item {
+  margin-top: 32px;
+}
+
+.mob-mailtel__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-mailtel__link:hover {
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
