@@ -227,7 +227,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 40px;
+  // padding-left: 40px;
 }
 
 .mob-menu {
@@ -243,6 +243,13 @@ input {
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+  }
+}
+
+.mob-menu .body {
+  overflow: hidden;
 }
 .mob-menu {
   &.is-hidden {
@@ -255,6 +262,7 @@ input {
   position: absolute;
   top: 10px;
   right: 15px;
+  color: #212121;
 }
 
 .mob-menu-list__link {
@@ -358,7 +366,7 @@ input {
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: #2196f3;
   &:hover {
     color: #2196f3;
   }

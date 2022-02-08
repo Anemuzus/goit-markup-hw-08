@@ -102,6 +102,10 @@ body {
   }
 }
 
+.black-mob-close {
+  fill: black;
+}
+
 .list {
   list-style: none;
 }
@@ -262,7 +266,6 @@ body {
 }
 
 .mailtel__icons {
-  fill: var(--benefits);
   margin-right: 10px;
   -webkit-transition-duration: var(--transition-d);
           transition-duration: var(--transition-d);
@@ -275,6 +278,12 @@ body {
 @media screen and (max-width: 768px) {
   .mailtel__icons {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mailtel__icons {
+    fill: var(--benefits);
   }
 }
 
@@ -314,6 +323,47 @@ body {
   .logo-mobile {
     display: none;
   }
+}
+
+.tablet-mail-tel {
+  margin-left: 84px;
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-mail-tel {
+    display: none;
+  }
+}
+
+.tablet-mail-tel__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #757575;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  -webkit-transition-duration: var(--transition-d);
+          transition-duration: var(--transition-d);
+  -webkit-transition-timing-function: var(--transition-t);
+          transition-timing-function: var(--transition-t);
+}
+
+.tablet-mail-tel__link:hover {
+  color: var(--accent-color);
+}
+
+.tablet-mail-tel__link:focus {
+  color: var(--accent-color);
+}
+
+.tablet-mail-tel__link-mb {
+  margin-bottom: 10px;
+}
+
+.tablet-mail-tel__link:hover .mailtel__icons {
+  fill: var(--accent-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -1750,7 +1800,6 @@ input::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 40px;
 }
 
 .mob-menu {
@@ -1771,6 +1820,16 @@ input::placeholder {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .mob-menu {
+    overflow: hidden;
+  }
+}
+
+.mob-menu .body {
+  overflow: hidden;
+}
+
 .mob-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1781,6 +1840,7 @@ input::placeholder {
   position: absolute;
   top: 10px;
   right: 15px;
+  color: #212121;
 }
 
 .mob-menu-list__link {
@@ -1882,7 +1942,7 @@ input::placeholder {
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: #2196f3;
 }
 
 .mob-mailtel__link:hover {
