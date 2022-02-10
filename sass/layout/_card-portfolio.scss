@@ -13,12 +13,18 @@
   opacity: 0;
   transform: translateY(100%);
   transition-property: opacity, transform;
+  @media screen and (max-width: 400px) {
+    padding: 0;
+  }
 }
 
 .flex-container__link {
   transition-duration: var(--transition-d);
   transition-timing-function: var(--transition-t);
   transition-property: display, box-shadow;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .blue-overlay {
   transition-timing-function: var(--transition-t);
@@ -133,6 +139,7 @@
 }
 
 .discription-card-portfolio__name {
+  letter-spacing: 0.06em;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -147,6 +154,7 @@
   margin: 0;
 }
 .discription-card-portfolio {
+  flex-grow: 1;
   border-left-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
