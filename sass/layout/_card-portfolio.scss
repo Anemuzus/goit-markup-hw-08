@@ -54,6 +54,9 @@
   line-height: calc(28 / 18);
   color: var(--bgc-text-hero);
   letter-spacing: 0.03em;
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
 }
 .flex-container {
   list-style: none;
