@@ -55,6 +55,7 @@
   color: var(--bgc-text-hero);
   letter-spacing: 0.03em;
   @media screen and (max-width: 400px) {
+    padding: 15px;
     font-size: 15px;
   }
 }
